@@ -14,7 +14,7 @@ function App() {
       <p>You clicked {count} times</p>
       <button onClick={() => {
           setCount(count + 1);
-          settext_shown(text_shown +"Text is shown, ");
+          settext_shown(text_shown +"Text is shown,\n");
         }
       }>
         Click me
