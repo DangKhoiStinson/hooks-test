@@ -14,15 +14,17 @@ function App() {
       <p>You clicked {count} times</p>
       <button onClick={() => {
           setCount(count + 1);
-          settext_shown(text_shown +"Text is shown,\n");
+          settext_shown(text_shown +"Text is shown,");
         }
       }>
         Click me
       </button>
       <br />
-      {text_shown && text_shown.split ('\n').map ((item, i) => {return <p key={i}>{item}</p>;})}
+      {text_shown && text_shown.split (',').map ((item, i) => {return <p key={i}>{item}</p>;})}
     </div>
     );
 }
+
+
 
 export default App;
